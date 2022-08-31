@@ -2,12 +2,12 @@ import React from 'react'
 import { Image } from 'react-native'
 
 export type ProfilePictureProps = {
-    image: string,
+    image?: string,
     size?: number, 
-    marginLeft: number,
+    marginLeft?: number,
 }
 
-const ProfilePicture = ({ image, size, marginLeft}: ProfilePictureProps) => (
+const ProfilePicture = ({ image, size = 50, marginLeft}: ProfilePictureProps) => (
     <Image 
     source={{ uri: image }} 
     style={{ 
