@@ -3,6 +3,7 @@ import { View, Text, Image } from 'react-native'
 import { TweetType } from '../../../types'
 import styles from './styles'
 import { FontAwesome } from '@expo/vector-icons'
+import moment from 'moment'
 import Footer from './Footer'
 
 export type MainContainerProps = {
@@ -15,7 +16,7 @@ const MainContainer = ({ tweet }: MainContainerProps) => (
             <View style={styles.tweetHeaderName}>
                 <Text style={styles.name} >{tweet.user.name}</Text>
                 <Text style={styles.username} >@{tweet.user.username}</Text>
-                <Text style={styles.createdAt} >{tweet.createdAt}</Text>
+                <Text style={styles.createdAt} >{moment(tweet.createdAt).fromNow()}</Text>
             </View>
             <View>
                 <FontAwesome styles={styles.moreIcon} name='chevron-down' size={15} color='grey' />
