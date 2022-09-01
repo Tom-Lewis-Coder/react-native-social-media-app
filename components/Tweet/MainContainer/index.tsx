@@ -2,22 +2,30 @@ import React from 'react'
 import { View, Text, Image } from 'react-native'
 import { TweetType } from '../../../types'
 import styles from './styles'
+import { FontAwesome } from '@expo/vector-icons'
+import Footer from './Footer'
 
 export type MainContainerProps = {
     tweet: TweetType,
 }
 
 const MainContainer = ({ tweet }: MainContainerProps) => (
-    <View>
+    <View style={styles.container}>
         <View style={styles.tweetHeaderContainer}>
-            <Text style={styles.name} >{tweet.user.name}</Text>
-            <Text style={styles.username} >@{tweet.user.username}</Text>
-            <Text style={styles.createdAt} >{tweet.createdAt}</Text>
+            <View style={styles.tweetHeaderName}>
+                <Text style={styles.name} >{tweet.user.name}</Text>
+                <Text style={styles.username} >@{tweet.user.username}</Text>
+                <Text style={styles.createdAt} >{tweet.createdAt}</Text>
+            </View>
+            <View>
+                <FontAwesome styles={styles.moreIcon} name='chevron-down' size={15} color='grey' />
+            </View>
         </View>
         <View>
-            <Text>{tweet.content}</Text>
-            {!!tweet.image && <Image source={{ uri: tweet.image }} />}
+            <Text style={styles.content}>{tweet.content}</Text>
+            {!!tweet.image && <Image style={styles.image} source={{ uri: tweet.image }} />}
         </View>
+        <Footer tweet={tweet} />
     </View>
 )
 
