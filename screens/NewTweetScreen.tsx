@@ -1,12 +1,8 @@
 import React, { useState } from 'react';
-import { StyleSheet, TouchableOpacity, SafeAreaView, TextInput, NativeSyntheticEvent, TextInputChangeEventData } from 'react-native';
+import { StyleSheet, TouchableOpacity, SafeAreaView, TextInput } from 'react-native';
 import { Text, View } from '../components/Themed';
-import { RootTabScreenProps } from '../types';
-import NewTweetButton from '../components/Feed/NewTweetButton';
-import Feed from '../components/Feed';
 import { AntDesign } from '@expo/vector-icons';
 import Colors from '../constants/Colors';
-import { withSafeAreaInsets } from 'react-native-safe-area-context';
 import ProfilePicture from '../components/ProfilePicture';
 
 export default function NewTweetScreen() {
