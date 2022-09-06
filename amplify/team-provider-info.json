@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-reactnativesocialmed-dev-150055-authRole",
+      "UnauthRoleArn": "arn:aws:iam::297817948400:role/amplify-reactnativesocialmed-dev-150055-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::297817948400:role/amplify-reactnativesocialmed-dev-150055-authRole",
+      "Region": "eu-west-2",
+      "DeploymentBucketName": "amplify-reactnativesocialmed-dev-150055-deployment",
+      "UnauthRoleName": "amplify-reactnativesocialmed-dev-150055-unauthRole",
+      "StackName": "amplify-reactnativesocialmed-dev-150055",
+      "StackId": "arn:aws:cloudformation:eu-west-2:297817948400:stack/amplify-reactnativesocialmed-dev-150055/2a33b350-2d23-11ed-8eb3-02e638078d9a",
+      "AmplifyAppId": "d1wgkw3rg15hce"
+    },
+    "categories": {
+      "auth": {
+        "reactnativesocialmed7f7e59db": {}
+      }
+    }
+  }
+}
