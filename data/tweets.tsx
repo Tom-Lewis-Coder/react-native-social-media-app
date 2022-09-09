@@ -37,7 +37,7 @@ const tweets = [
             image: 'https://miro.medium.com/max/1400/1*jDIj2SKAE-Bp32owLoHDjw.png',   
         },
         createdAt: '2022-09-01T15:53:00.000Z',
-        content: 'Weiners!',
+        content: 'Hot dogs!',
         image: 'https://miro.medium.com/max/1400/1*jDIj2SKAE-Bp32owLoHDjw.png',
         numberOfComments: 1,
         numberOfRetweets: 1,
