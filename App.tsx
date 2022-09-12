@@ -5,7 +5,7 @@ import { Amplify } from 'aws-amplify'
 import useCachedResources from './hooks/useCachedResources';
 import useColorScheme from './hooks/useColorScheme';
 import Navigation from './navigation';
-import awsconfig from './src/aws-exports'
+import awsconfig from './aws-exports'
 
 Amplify.configure(awsconfig)
 
